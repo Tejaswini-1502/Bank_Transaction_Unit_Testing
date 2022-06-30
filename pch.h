@@ -27,7 +27,7 @@ public:
 	}
 
 	int withdraw(int withdraw_amt) {
-		if (withdraw_amt > 500 || withdraw_amt<0) {
+		if (withdraw_amt > balance || withdraw_amt<0) {
 			return balance;
 		}
 		balance -= withdraw_amt;
